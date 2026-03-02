@@ -1,0 +1,51 @@
+ In this video, we'll complete a deeper dive into activities assigned to Phase 4 Build
+ and Validate.
+ We'll then end the video by showing a set of checklist items that will need to be completed
+ within the Phase as well.
+ Since this video is focused on Phase 4, we'll focus on the following activity categories.
+ We'll talk about building and demoing the product feature internally and move into the
+ different varieties of testing.
+ We'll discuss training and end with the product feature launched to the customer.
+ In the following slides, we've laid out the distinct activity attached to a specific
+ subface.
+ We've also shared the resulting artifact coming as a result of the activity and the
+ directly responsible function who has the responsibility to complete the artifact alongside
+ consultation from other functions.
+ In note about the artifacts, we're not going to go into the artifact templates and screen
+ share what they look like in these trainings.
+ Instead, each functional lead will be responsible for training their teams on any artifacts
+ that they own.
+ So look out for the meeting invites from your functional leads who will walk through your
+ artifacts in depth with you as they help to create the templates.
+ And now, picking up where we left off at the end of Phase 3, we'll now complete the following
+ activities for Phase 4.
+ Shown first here is building the product feature itself.
+ This will be completed by the engineering team.
+ And throughout the build, they will be internally demoing the feature to stakeholders for feedback.
+ At a certain point during the build, the engineering team will be able to provide the final engineering
+ estimate, which will be the exact delivery date to the customer.
+ The DM team will take this info and update the release plan accordingly and communicate
+ the delivery date to the customer.
+ Once the product feature has been built, the QA team will complete quality assurance
+ testing.
+ And once QA testing has been completed, we'll then conduct internal product and design acceptance
+ testing, otherwise known as PDAT.
+ The clinical solutions team will also be involved in PDAT testing.
+ Next, we'll then complete customer UAT, which is inclusive of creating the UAT scripts and
+ completing the testing with customers.
+ The product guide will be created or updated with the help of the product management team.
+ And the training team will create their training plan and complete their customer training as
+ well.
+ Finally, the product feature is launched to the customer.
+ And we then take hyper care to its conclusion, thus ending the PDLC cycle for the specific
+ feature set.
+ And to end this training video, we want to touch upon a checklist item that will need
+ to be started and/or completed in phase four.
+ As mentioned previously, these are actions that don't result in a specific artifact deliverable
+ but are important to complete.
+ Here we talk about GO/NO GO Decisioning, which would occur closer to the launch date for
+ the future.
+ While the DM team is the directly responsible function for leading the discussion, there
+ will be heavy input from engineering as well as other stakeholders to ensure that we are
+ delivering a high quality feature to our customer.
+ And of course, the release date can be pushed back as a result of this discussion if needed.

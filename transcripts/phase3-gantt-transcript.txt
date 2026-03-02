@@ -1,0 +1,49 @@
+ In this video, we will wrap up the conversation about phase 3 and talk through how the different
+ phase 3 activities can be visualized on an example Gantt chart.
+ We'll also discuss how the team will decide on whether you're ready to move to the next
+ phase.
+ And finally, we'll wrap up with revisiting the intended outcomes from the planned phase
+ now that you've seen all of the different activities included in this phase.
+ And to reorient yourself with the phase 3 activities discussed in the previous video,
+ we're resharing them here on the screen.
+ Next, we want to visually share what a Gantt chart looks like with the varying phase 3
+ activities included across the timeline, and we've layered on the phase 1 and 2 activities
+ as well.
+ I want to emphasize that this is an illustrative timeline.
+ The actual timeline should be set and agreed upon via the DM who is managing the schedule.
+ The purpose here is to show that activities can happen in parallel, and that former activities
+ completed in prior phases can be revisited and changed based on new information.
+ You'll see here that the requirements and designs are completed in parallel.
+ And the expectation here is that the product and design teams are constantly communicating
+ with each other to ensure the deliverables are consistent in solution approach.
+ You'll also see the engineering estimate and the release plan development line items listed
+ here.
+ We'll also spend a few minutes on how to decide when the team is ready to move on to the next
+ phase.
+ A few things to keep in mind here.
+ This is not a check the box exercise, and it should not be based on whether all artifacts
+ are perfect.
+ As we've shown in the prior slide example, you can always revisit artifacts from previous
+ phases and make changes based on new information that you'll learn as you move through the
+ project.
+ For decision making, the DM on the project will lead a meeting that should not be longer
+ than 1 hour, and we encourage that this can be completed as part of an existing team meeting.
+ The DM will facilitate the conversation and hear thoughts from all team members on whether
+ the team collectively feels comfortable starting development in the next phase, with heavy input
+ from the engineering team here as they will be the ones building the product.
+ One important exercise as we move into phase four is a clear pencils down agreement between
+ product and design.
+ This is a critical step.
+ The goal is to give engineering team a stable set of requirements and designs so they're
+ not dealing with shifting scope mid-built.
+ That doesn't mean nothing can change.
+ It means that when things do change, we're intentional about how they're handled.
+ If there are any updates, they should be clearly communicated to engineering, and the team
+ should be empowered to weigh in on what gets included now versus deferred.
+ Together we'll assess the impact on scope, timelines, and delivery before moving forward.
+ To end this video on phase three, recall that the outcome of this phase has been focused
+ on getting to a clear scope and completed requirements and designs so that a draft release
+ plan can be created and we are ready to move into the next phase, which is building the
+ feature set in earnest.
+ In the next set of videos, we will demonstrate that the activities in phase four, which is
+ where we will get into the details of the build phase.

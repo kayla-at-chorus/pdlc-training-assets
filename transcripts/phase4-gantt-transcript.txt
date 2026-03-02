@@ -1,0 +1,40 @@
+ In this video, we will wrap up the conversation about Phase 4 and we'll talk through how the
+ different Phase 4 activities can be visualized on an example Gantt chart.
+ We'll also discuss how the feature team will decide on whether you're ready to move on
+ and close out the PDLC cycle for a net new feature.
+ Finally, we'll wrap with revisiting the intended outcomes from the build phase.
+ Now that you've seen all of the different activities included in this phase.
+ And to reorient yourself with the Phase 4 activities discussed in a previous video, we're resharing
+ them here on screen.
+ Next, we want to visually share what a Gantt chart looks like with the varying Phase 4
+ activities included across a timeline and we've layered on the Phase 3 activities as well.
+ I want to emphasize that this is an illustrative timeline.
+ The actual timeline should be set and agreed upon via the DM who is managing the schedule.
+ The purpose here is to show that activities can happen in parallel and that former activities
+ completed in prior phases can be revisited and changed based on new information.
+ Most of our projects have the same sequence of activities leading up to a release for
+ a customer, so we won't spend too much time here.
+ The only call out worth mentioning here is that QA testing should be completed prior
+ to the start of PDAT testing and PDAT testing should be completed prior to the start of
+ customer UAT.
+ The reason for this sequence is to ensure that the majority of issues have been caught
+ and resolved by chorus team members prior to putting the feature set into the hands
+ of our customers.
+ We'll also spend a few minutes on how to decide when the team is ready to move on and close
+ out the PDLC cycle for a net new feature.
+ For decision making, the DM on the project will lead a meeting that should not be longer
+ than an hour and we encourage that this could be completed as part of an existing team meeting.
+ The main question to answer here will be whether the team feels comfortable with the number
+ and severity of issues being reported by the customer post launch.
+ If it's relatively smooth and there aren't any high severity issues being reported then
+ this should be a quick exercise.
+ If there are some high priority issues reported then take into account the dates by which
+ the issues will be fixed by the engineering team and this exercise will provide input
+ into a target date by which hyper care can end.
+ To end this video on phase four, recall that the outcome of this phase has been focused
+ on releasing the feature set to customers and providing rapid issue resolution during
+ hyper care.
+ This ends the video training on the PDLC phases.
+ Thanks for sticking through it and we hope that the standardized process will bring clarity
+ and organization to the product development process and enable us all to focus our energy
+ on honing our respective crafts and building delightful experiences for our customers.

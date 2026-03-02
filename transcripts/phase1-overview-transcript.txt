@@ -1,0 +1,46 @@
+ In this video, we'll get into the large categories of activities across the four phases, and then do a deeper dive into those that are attached to Phase 1 discovery.
+ We'll then end the video by showing a set of checklist items that will need to be completed within the phase as well.
+ Remember, the checklist items are distinctly different from activities, which are more focused on providing a deliverable at the end.
+ In a prior video, we showed the purpose and the outcome from each phase.
+ We have now layered in the larger categories of activities that are expected to be completed when building a net new feature.
+ Since this video is focused on Phase 1, we'll focus on the following activity categories.
+ We'll talk about getting the context and problem definition for the future, as well as how we aim to gain clinical solutions insights.
+ Foundational UXR in a small comparative reference analysis will also be conducted alongside some aspects of domain modeling.
+ We'll also gain a better understanding of the technical feasibility of the potential solution as well.
+ In the following slides, we've laid out the distinct activity attached to a specific subphase.
+ We've also shared the resulting artifact coming as a result of the activity and the directly responsible function, or DRF, who has the responsibility to complete the artifact alongside consultation from other functions.
+ One note about the artifacts, we are not going to go into the artifact templates and screen share what they look like in these trainings.
+ Instead, each functional lead will be responsible for training their teams on any artifacts that they own.
+ So look out for meeting invites from functional leads who will walk through your artifacts in depth with you as they help to create the templates.
+ Let's now dive into each of the activities and keep in mind this is what a team would be doing when they have a net new feature that will need to be built for a customer.
+ The first activity is focused on define the why now for the customer.
+ Sometimes this gets lost amidst all the other workstream needs on our projects today.
+ The purpose is to clarify what was learned about this feature need during the sales conversations so that all team members have adequate background context prior to starting any discovery work.
+ Next, we'll define the problem statement and goals for this feature.
+ This ensures everyone, engineering, design, clinical solutions, customer success, as well as leadership, understands the underlying problem,
+ the value the feature is meant to deliver and the outcomes we are targeting before any solution work begins.
+ It establishes a shared foundation that guides all downstream design, development and prioritization decisions.
+ It'll be owned by the product team as the DRF.
+ The DM team or the delivery management team will lead a cross functional kickoff meeting to bring together the team members working on the net net new feature side.
+ During the discussion, the DM will discuss the rough timeline for completing the net new feature set, which will include all activities across the four phases of the PDLC.
+ Keep in mind that the timeline can change and most likely will change as the team progresses through the PDLC together.
+ Also during this meeting, the problem statement and the goals for this feature set will be shared by the product team.
+ Next, the CleanSol key insight summary will help to document all the important clinical context around this feature, which is not always fully understood by all team members outside of the clinical solutions team today.
+ This summary provides foundational context from the clinical solutions team.
+ So product and engineering begin solutioning with a grounded understanding of real world clinical needs constraints and standards of care.
+ It will of course be owned by the clinical solutions team.
+ We will also start any foundational UXR research for this feature if it was scoped in the SOW.
+ This will be a valuable way to gain deeper insights from on the ground teams at the customer company around their current workflows and any additional underlying needs, which we gleaned by workshops or interviews.
+ We'll have the product team complete short competitor reference analysis to identify and analyze any features that already exist in the space.
+ For example, you could look at how Epic and EHR competitor has completed their medication management module to inform how we should potentially build ours.
+ Next, the product team will use the knowledge gained so far to start building out workflow diagrams and process flows.
+ And keep in mind that these can continue to be iterated upon and change throughout subsequent phases of PDLC.
+ As we've mentioned before, we will be bringing engineering into future discussions upstream, and so we'll be asking engineering to provide a feasibility check on any proposed functionality that is being discussed in the process flow mapping.
+ We'll also be asking engineering to provide a high level estimate based on knowledge gained through the different artifacts created in discovery.
+ Think of this as an estimate at the highest altitude possible in the form of t-shirt sizes, with reasoning provided. The same estimate will continue to be refined through the upcoming phases as more concrete solution definition emerges.
+ To end this training video, we want to touch upon the different checklist items that will need to be started and/or completed in phase one. As mentioned, these are actions that don't result in a specific artifact deliverable, but are important to complete nonetheless.
+ To start things off, the JPD idea should be added to JIRA by the product team.
+ New glossary terms that are identified via discovery working sessions should be added to the clinical glossary or the product glossary, depending upon the type.
+ Additionally, infosec should be informed about the solution direction starting in phase one. Infosec should continue to stay informed throughout the remaining phases as well.
+ And finally, any given sold contract is going to have a delivery plan, which is inclusive of effort estimates by each function over time. That timeline needs to get revisited and updated continuously, with delivery management owning this activity.
+ One of the checkups will need to occur at the end of phase one.

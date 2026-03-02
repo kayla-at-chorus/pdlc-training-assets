@@ -1,0 +1,28 @@
+ In this video, we'll complete a deeper dive into activities assigned to phase 2 define.
+ We'll then end the video by showing a set of checklist items that will need to be completed within the phase as well.
+ Since this video is focused on phase 2, we'll focus on the following activity categories.
+ We'll talk about getting the requirements and wireframes getting drafted and how they will inform the creation of draft designs.
+ We'll discuss the need for technical design documentation to be completed and revisit and refine the engineering estimate provided in the previous phase.
+ In the following slides, we've laid out the distinct activity attached to a specific sub-phase.
+ We have also shared the resulting artifact coming as a result of the activity and the directly responsible function, or DRF, who has the responsibility to complete the artifact alongside consultation from other functions.
+ One note about the artifacts.
+ We are not going to go into the artifact template and screen share what they look like in these trainings.
+ Instead, each functional lead will be responsible for training their teams on any artifacts that they own.
+ So look out for meeting invites from your functional leads who will walk through your artifacts in depth with you as they helped to create the templates.
+ And now, picking up where we left off at the end of phase 1, we'll now complete the following activities for phase 2.
+ The first activity will be drafting high level requirements for the net new feature, and this can be done by leveraging the learnings from the process maps that we created in the previous phase.
+ This activity will be owned by product managers.
+ Alongside the activity, early low fidelity wireframes will also be created by the design team, which is a marked change from the ways that many teams operate inside of chorus.
+ The rough wireframes will focus on functionality and user interactions rather than visual design details, enabling rapid iteration, early feedback, and alignment across product design and engineering teams before investing in detailed design or development.
+ Through these exercises, and with details more informed through the wireframing activity, the requirements can now be further refined by the product team.
+ And with the refinement of requirements and a shared understanding of the solution approach brought together by wireframing, the designs can now be started in earnest.
+ We will also create a technical design document which will outline the proposed system architecture for the solution.
+ The purpose of the document is to align stakeholders on the implementation approach before significant development begins, and to surface technical risks, dependencies, and open questions early on.
+ This activity will be owned by the engineering team.
+ And finally, the engineering estimate from the previous phase will now be further refined based on the information gathered from this current phase.
+ The estimate will now transition from a t-shirt sizing to timing based on number of weeks, though at this point, it will still be independent of actual resource allocation.
+ And to end this training video, we want to touch upon the different checklist items that you will need to start and/or to be completed in phase two.
+ As mentioned previously, these are actions that don't result in a specific artifact deliverable, but are important to complete.
+ A technical lead will need to be allocated to this project by the engineering team, and this person will be responsible for the creation of the technical design document.
+ Also, as we discussed in the video from the previous phase, the delivery plan timeline needs to get revisited and updated continuously, with delivery management owning this activity.
+ One of the checkups will need to incur at the end of phase two.

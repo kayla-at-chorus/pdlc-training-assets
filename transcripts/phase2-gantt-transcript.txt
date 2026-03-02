@@ -1,0 +1,49 @@
+ In this video, we will wrap up the conversation about phase two and we will talk through how
+ the different phase two activities can be visualized on an example Gantt chart.
+ We'll also discuss how the team will decide on whether you're ready to move to the next
+ phase.
+ And finally, we'll wrap up with revisiting the intended outcomes from the defined phase
+ now that you've seen all of the different activities included in this phase.
+ And to reorient yourself with the phase two activities discussed in a previous video,
+ we're resharing them here on the screen.
+ Next, we want to visually share what a Gantt chart looks like with the varying phase two
+ activities included across the timeline, and we've layered on the phase one activities
+ as well.
+ I want to emphasize that this is an illustrative timeline.
+ The actual timeline should be set and agreed upon via the DM, who is managing the schedule.
+ The purpose here is to show that activities can happen in parallel and that former activities
+ completed in prior phases can be revisited and changed based on new information.
+ A few things to call out here as notable examples, you'll see that the drafting of initial requirements
+ occur around the same time as wireframes, which can happen because both activities are
+ driven off of learnings from the process mapping exercise from the previous phase.
+ Additionally, requirements definition can be informed by learnings from the wireframing
+ exercise and the vice versa is true as well.
+ You'll also notice that the process mapping workflow diagramming exercise from the previous
+ phase was revisited and updated here as were the CLINCEL key insight summary.
+ In this example scenario, new information was uncovered during the requirements definition
+ activity and those learnings were then added to the process maps as well as the CLINCEL
+ key insight summary document.
+ This is to illustrate that sometimes you will need to go back and update artifacts from
+ a prior phase based on new information that you've just uncovered and that's totally
+ fine.
+ We'll also spend a few minutes on how to decide when the team is ready to move on to the next
+ phase.
+ A few things to keep in mind here, this is not a check the box exercise and it should
+ also not be based on whether all artifacts are perfect.
+ And we've shown that in the prior slide example, you can always revisit artifacts from previous
+ phases and make changes based on new information that you learn as you move through the project.
+ For decision making, the DM on the project will lead a meeting that should not be longer
+ than an hour and we encourage that this could also be completed as part of an existing team
+ meeting.
+ The DM will facilitate the conversation and hear thoughts from all team members on whether
+ the team collectively feels comfortable with the direction of as well as the level of detail
+ included in the draft requirements document and the initial designs.
+ Keep in mind that the requirements and designs will be completed in the next phase, so there
+ is still room to make enhancements.
+ Once done, the DM can note this phase is completed and then the team can move to the next phase
+ with confidence.
+ To end this video on phase two, recall that the outcome of this phase has been focused
+ on getting to actionable requirements and early designs that translate the insights
+ from discovery into a firmer solution concept.
+ In the next set of videos, we will discuss what the activities are in phase three, which
+ will get us closer to the build phase.

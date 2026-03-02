@@ -1,0 +1,52 @@
+ In this video, we'll complete a deeper dive into activities assigned to phase 3 plan.
+ We'll then end the video by showing you a set of checklist items that will need to be
+ completed within the phase as well.
+ Since the video is focused on phase 3, we'll focus on the following activity categories.
+ We'll talk about getting the requirements and designs completed in preparation for the
+ build phase, and we'll also discuss putting together the release plan for the feature
+ set that is being developed via the PDLC.
+ In the following slides, we've laid out the distinct activity attached to a specific subphase.
+ We have also shared the resulting artifacts coming as a result of the activity and the
+ directly responsible function, or DRF, who has the responsibility to complete the artifact
+ alongside consultation from the other functions.
+ A reminder that we won't cover the artifacts in detail in these trainings.
+ Instead, each functional lead will be responsible for training their teams on any artifacts
+ that they own.
+ So just a reminder, keep a lookout for a meeting invite from your functional lead who will
+ walk through those artifacts with you in depth as they've helped to create those templates.
+ And now, picking up where we left off at the end of phase 2, we'll now complete the following
+ activities for phase 3.
+ The first activity will be completing the requirements document using what we know today.
+ You'll notice we're intentionally not using the word finalize.
+ That's because requirements evolve over time and we can, as we continue to learn more.
+ That said, for this specific PDLC cycle and feature, we do need to get the requirements
+ to a complete enough state.
+ This ensures the engineering team can confidently plan and scope the development work in the
+ next phase.
+ Next, the design document will be the, will be what's completed next based on the information
+ known to date.
+ With these artifacts in hand, the engineering team will further refine the engineering estimate
+ from the previous phase.
+ The estimate will now transition to a date range such as development can be completed
+ sometime between January 1st and January 25th with reasoning and assumptions provided accordingly.
+ One other thing worth calling out is the engineering teams role so far across the first three phases
+ of the PDLC.
+ While we haven't kicked off build in earnest yet, engineering has been actively involved
+ the entire way.
+ They've stayed informed, engaged throughout each phase, which means they're coming into
+ build with much more context and a deeper understanding of the solution.
+ They've partnered closely on analysis, acted as thought partners throughout the process
+ and contributed concrete deliverables like the technical design document.
+ All of this upfront involvement pays off.
+ It sets us up for a much smoother development phase and allows us to fully leverage the
+ shared knowledge and decisions built over the course of the PDLC.
+ Finally, with the estimates in hand, the delivery management team now creates a release plan.
+ If needed, the delivery of the features full functionality can be split across multiple
+ releases based on the delivery manager's judgment.
+ And to end this training video, we want to touch upon a checklist item that will need
+ to be started and/or completed in phase three.
+ As mentioned previously, there are actions that don't result in the specific artifact
+ deliverable but are important to complete.
+ As we discussed in the video for the previous phase, the delivery plan timeline needs to
+ get revisited and updated continuously with delivery management owning this activity.
+ One of the checkups will need to occur at the end of phase three.

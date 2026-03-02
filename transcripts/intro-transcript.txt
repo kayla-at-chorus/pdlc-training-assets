@@ -1,0 +1,76 @@
+ In this video, we're going to walk through the Product Development Life Cycle, or PDLC,
+ that we'll be using at Quora's Effective Monday, March 9th.
+ We'll start with a quick high-level overview of each phase, including the purpose of the
+ phase and what we should have accomplished by the time we move on.
+ Then, we'll talk about some of the most notable changes this introduces compared to how we've
+ built products in the past.
+ And finally, we'll wrap up with a few key takeaways to keep in mind as you go through
+ the rest of the PDLC training videos.
+ As you've learned in prior discussions about the PDLC, it will be grouped across four phases
+ - Discovery, Define, Plan, and Build and Validate.
+ Here is a high-level breakdown of the purpose and outcomes from each phase, keeping in mind
+ that the detailed activities will be covered in upcoming training videos.
+ For Discovery, the purpose is to align on what problem we're solving and start to shape
+ the potential solution.
+ As an outcome, we want a validated problem definition and a foundation of analysis that
+ enables confident solution definition in Phase 2.
+ What this means is that we have a clearly defined and shared understanding of the customer
+ problem supported by clinical user and technical insights with early alignment on feasibility,
+ goals, and the foundational workflows.
+ For the second phase, Define, the purpose is that we are able to enter deeper work into
+ rough wireframes requirements and designs.
+ As an outcome, we now have clear actionable requirements and early designs that translate
+ Discovery insights into a firm solution concept.
+ What this means is that we have a well-defined solution direction with refined requirements,
+ validated workflows, and draft designs that align cross-functional teams on what will
+ be built as well as how it will meet user and clinical needs.
+ For the next phase, Plan, the purpose is to confirm readiness to start building with most
+ unknowns resolved.
+ As an outcome, we now have a build-ready plan with clear scope, completed artifacts, and
+ delivery alignment across teams.
+ What this means is that we have a complete and aligned feature definition with finalized
+ requirements, designs, and a release plan that resolves remaining unknowns and enables
+ engineering to begin development with confidence.
+ And finally, with Build and Validate, the purpose is to execute efficiently on the build,
+ run continuously, and adjust when needed.
+ And then as an outcome, we have a successful feature launch validated by users, supported
+ by stable performance, and rapid post-launch issue resolution.
+ We also want to take this time to share a few important call-outs about the PDLC.
+ As you can see, the PDLC isn't introducing a bunch of brand new work.
+ In reality, it formalizes many of the activities we already do across projects at Chorus, just
+ not consistently or in a clear sequence.
+ The biggest changes compared to how we operate today really show up in phases one and two
+ of the PDLC, and we've listed three call-outs beneath that section.
+ Next we'll be bringing engineering into this process much earlier as a close-thought partner
+ to the feature teams.
+ This gives engineering better context on the problem we're trying to solve, and allows
+ them to meaningfully shape the solution, not just execute on it.
+ Second, we'll put more emphasis on creating process maps early on.
+ These help us clearly understand workflows and expected system behaviors before we move
+ into design.
+ And finally, we'll use wireframes to align early on how screens should be structured
+ before jumping straight into detailed Figma files, or Figma designs.
+ This helps teams focus on the right questions, like how the system should behave when actions
+ are taken rather than getting pulled too early into UI details like button placement or text.
+ Finally, we want to share some key takeaways that you can carry forward as you review the
+ remaining of this training.
+ First, keep in mind that the process is iterative, which means that as you go through the different
+ phases, there will be times when you need to revisit artifacts from a previous phase.
+ As an example, you may be in phase two and then realize that you need to adjust a process
+ or flow that you completed earlier in phase one.
+ You can go back and make changes and then update requirements and designs accordingly,
+ which are phase two activities.
+ Next, there will be both activities as well as checklist items that will need to be completed
+ within each phase.
+ Think of activities as having an outcome at the end, such as requirements document.
+ Checklist items are more akin to actions to take, such as assigning an engineering team
+ tech lead in phase one.
+ Next, we want to emphasize that the PDLC will always need to be completed end to end for
+ a net new feature build, which means that the feature doesn't currently exist in any
+ form in our core as products.
+ And lastly, we want to acknowledge that this is a big and needed change in our company.
+ We are aligning to a new model for how we collaborate and build products together.
+ Given this change, we will learn a lot over the next few months and this PDLC process will
+ continue to evolve and change.
+ So think of this as the version one release and we will collect feedback from teams and
+ continue to build on this process together.
