@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDLC Training - ADHD Friendly</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #2E3440;
+            color: #ECEFF4;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #1e1e2e;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+        }
+
+        h1 {
+            color: #89dceb;
+            font-size: 28px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #89b4fa;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #89b4fa;
+            font-size: 22px;
+            margin: 25px 0 15px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h3 {
+            color: #f9e2af;
+            font-size: 18px;
+            margin: 15px 0 10px 0;
+        }
+
+        h4 {
+            color: #89dceb;
+            font-size: 16px;
+            margin: 20px 0 12px 0;
+            font-weight: 600;
+        }
+
+        p {
+            margin: 12px 0;
+            line-height: 1.7;
+        }
+
+        a {
+            color: #89b4fa;
+            text-decoration: underline;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 3px;
+            transition: all 0.2s ease;
+        }
+
+        a:hover {
+            color: #b4befe;
+            text-decoration-thickness: 2px;
+        }
+
+        .quick-ref {
+            background: #313244;
+            border-left: 4px solid #f38ba8;
+            padding: 15px;
+            margin-bottom: 25px;
+            border-radius: 4px;
+        }
+
+        .quick-ref h2 {
+            color: #f38ba8;
+            margin-top: 0;
+        }
+
+        .deadline {
+            font-size: 20px;
+            font-weight: bold;
+            color: #eba0ac;
+            margin: 10px 0;
+        }
+
+        .go-live {
+            font-size: 20px;
+            font-weight: bold;
+            color: #a6e3a1;
+            margin: 10px 0;
+        }
+
+        .phase-box {
+            background: #181825;
+            border-left: 4px solid #89b4fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .phase-box.phase1 { border-left-color: #fab387; }
+        .phase-box.phase2 { border-left-color: #cba6f7; }
+        .phase-box.phase3 { border-left-color: #74c7ec; }
+        .phase-box.phase4 { border-left-color: #a6e3a1; }
+
+        .time-box {
+            display: inline-block;
+            background: #313244;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: #f9e2af;
+            margin-left: 10px;
+        }
+
+        .checklist {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .checklist li {
+            padding: 8px 0;
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checklist li::before {
+            content: "☐";
+            color: #89b4fa;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .key-question {
+            background: #313244;
+            border-left: 3px solid #f9e2af;
+            padding: 12px;
+            margin: 10px 0;
+            font-style: italic;
+            color: #f9e2af;
+        }
+
+        .resources {
+            background: #313244;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .resources a {
+            color: #89b4fa;
+            text-decoration: none;
+            display: block;
+            padding: 10px 12px;
+            margin: 6px 0;
+            background: #181825;
+            border-radius: 4px;
+            border-left: 3px solid #89b4fa;
+            transition: all 0.2s ease;
+        }
+
+        .resources a:hover {
+            color: #b4befe;
+            background: #1e1e2e;
+            border-left-color: #b4befe;
+            transform: translateX(4px);
+        }
+
+        .support-box {
+            background: #313244;
+            border: 2px solid #a6e3a1;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+
+        .support-box h3 {
+            color: #a6e3a1;
+            margin-top: 0;
+        }
+
+        .emoji {
+            font-size: 24px;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: #313244;
+            border-radius: 4px;
+            margin: 15px 0;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #fab387, #cba6f7, #74c7ec, #a6e3a1);
+            width: 0%;
+            transition: width 0.3s;
+        }
+
+        .tip {
+            background: #313244;
+            border-left: 3px solid #f9e2af;
+            padding: 10px 15px;
+            margin: 10px 0;
+            color: #f9e2af;
+            font-size: 14px;
+        }
+
+        code {
+            background: #313244;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #89dceb;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #45475a;
+            margin: 35px 0;
+        }
+
+        .video-links {
+            background: #313244;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+
+        .video-links summary {
+            cursor: pointer;
+            font-weight: 600;
+            color: #fab387;
+            font-size: 16px;
+            padding: 5px 0;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .video-links summary::-webkit-details-marker { display: none; }
+        .video-links summary::before {
+            content: "▸";
+            font-size: 14px;
+            transition: transform 0.2s ease;
+        }
+        .video-links[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        .video-links h4 {
+            margin-top: 0;
+            color: #fab387;
+        }
+
+        .video-links ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        .video-links li {
+            margin: 8px 0;
+        }
+
+        .video-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 14px;
+            background: #181825;
+            border-radius: 4px;
+            text-decoration: none;
+            border: 1px solid #45475a;
+            transition: all 0.2s ease;
+        }
+
+        .video-links a:hover {
+            background: #89b4fa;
+            color: #1e1e2e;
+            border-color: #89b4fa;
+            transform: translateX(4px);
+        }
+
+        .video-links a::before {
+            content: "▶";
+            font-size: 12px;
+            color: #fab387;
+        }
+
+        .video-links a:hover::before {
+            color: #1e1e2e;
+        }
+
+        video {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 6px;
+            background: #000;
+            margin: 10px 0;
+        }
+
+        .video-container {
+            background: #181825;
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+        }
+
+        .video-container h5 {
+            color: #fab387;
+            margin: 0 0 10px 0;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .phase-box ul:not(.checklist) {
+            margin: 10px 0;
+            padding-left: 0;
+        }
+
+        .phase-box ul:not(.checklist) li {
+            margin: 8px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .phase-box ul:not(.checklist) li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: #89b4fa;
+        }
+
+        strong {
+            color: #cdd6f4;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 PDLC Training - Quick Guide</h1>
+
+        <div class="quick-ref">
+            <h2>⚡ Quick Reference</h2>
+            <div class="deadline">📅 Training Deadline: March 6, 2026</div>
+            <div class="go-live">🚀 Go-Live Date: March 16, 2026</div>
+            <p><strong>⏱️ Time Required:</strong> 1 hour (self-paced)</p>
+            <p><strong>📺 Format:</strong> Video training using <em>The Bear</em> as analogy</p>
+        </div>
+
+        <div class="resources">
+            <h3>📚 Resources</h3>
+            <a href="https://docs.google.com/presentation/d/1D-nfL_ekk46QHlPzdDTDJLuN8ISYUWbQOQBJrHJ_UO4/edit" target="_blank">📊 PDLC Slide Deck (quick reference)</a>
+            <a href="https://docs.google.com/spreadsheets/d/1auz6cFByk5K6dAJ3N-Cf2lfWLkZw9VI0POczhGXtB6U/edit" target="_blank">📋 PDLC Spreadsheet (sortable activities)</a>
+            <a href="https://chorusapp.atlassian.net/wiki/spaces/DM/pages/3445981209/PDLC+Training" target="_blank">📖 Full Training Page (Confluence)</a>
+            <a href="https://www.surveymonkey.com/r/PDLC2026" target="_blank">📝 Feedback Survey</a>
+        </div>
+
+        <div class="support-box">
+            <h3>💬 Need Help?</h3>
+            <p>Post questions in Slack: <code>#pdlc-support</code></p>
+            <p>Share wins and celebrate good artifacts there too!</p>
+        </div>
+
+        <hr>
+
+        <h2>🎬 Core Concept</h2>
+        <div class="key-question">
+            "How do we provide world-class hospitality to our customers through our product development process?"
+        </div>
+        <p>Like a Michelin-star restaurant, every detail matters. The PDLC is our "mise en place" - intentional preparation that replaces chaos with confidence.</p>
+
+        <div class="tip">
+            💡 <strong>Key Shift:</strong> From "solution-first impulse" → "learning-driven approach"
+        </div>
+
+        <details class="video-links" style="border-left: 4px solid #89b4fa; background: #181825; padding: 15px; border-radius: 6px;">
+            <summary style="color: #89dceb;">📺 Start Here: Introduction to PDLC</summary>
+            <p style="margin-bottom: 10px; color: #D8DEE9; font-size: 14px;">High-level overview of all 4 phases, notable changes from current process, and key takeaways</p>
+            <video controls preload="metadata">
+                <source src="videos/intro.mp4" type="video/mp4">
+                Your browser doesn't support video playback.
+            </video>
+            <p style="margin-top: 10px; font-size: 13px; color: #6c7086;">
+                📄 <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/intro-transcript.txt" style="color: #89b4fa;">View transcript</a>
+            </p>
+        </details>
+
+        <hr>
+
+        <h2>🔄 The 4 Phases</h2>
+
+        <div class="phase-box phase1">
+            <h3><span class="emoji">🔍</span> Phase 1: Discovery</h3>
+            <p><strong>Goal:</strong> Know <em>enough</em> to define the problem (not perfect documentation)</p>
+
+            <div class="key-question">
+                "What problem are we actually solving?"
+            </div>
+
+            <p><strong>The Bear Analogy:</strong> Carmy can't fix the kitchen until he understands the "ingredients" and assigns roles based on strengths.</p>
+
+            <h4>Activities Checklist:</h4>
+            <ul class="checklist">
+                <li>Define the problem (resist jumping to solutions)</li>
+                <li>Research existing patterns/approaches</li>
+                <li>Align on what we're solving</li>
+                <li>Create living templates (iterate as we learn)</li>
+            </ul>
+
+            <p><strong>Decision Gate:</strong> Do we have enough signal to move forward?</p>
+
+            <details class="video-links">
+                <summary>📺 Watch Videos</summary>
+
+                <div class="video-container">
+                    <h5>Overview of Activities</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase1-overview.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+
+                <div class="video-container">
+                    <h5>Gantt Illustration + Decisioning</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase1-gantt.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+            </details>
+        </div>
+
+        <div class="phase-box phase2">
+            <h3><span class="emoji">✏️</span> Phase 2: Define</h3>
+            <p><strong>Goal:</strong> Translate insights into rough wireframes + actionable requirements</p>
+
+            <div class="key-question">
+                "How will our solution actually meet the needs we identified?"
+            </div>
+
+            <p><strong>The Bear Analogy:</strong> "The Forks" episode - Every detail down to the smudge on a fork is a defined requirement of 5-star service.</p>
+
+            <h4>Activities Checklist:</h4>
+            <ul class="checklist">
+                <li>Create wireframes (rough, intentional)</li>
+                <li>Document requirements (clinical + user needs)</li>
+                <li>Align cross-functional teams (Product, Design, Clinical, Engineering)</li>
+                <li>Ensure every detail has purpose</li>
+            </ul>
+
+            <p><strong>Decision Gate:</strong> Does the solution concept meet our defined needs?</p>
+
+            <details class="video-links">
+                <summary>📺 Watch Videos</summary>
+
+                <div class="video-container">
+                    <h5>Overview of Activities</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase2-overview.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+
+                <div class="video-container">
+                    <h5>Gantt Illustration + Decisioning</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase2-gantt.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+            </details>
+        </div>
+
+        <div class="phase-box phase3">
+            <h3><span class="emoji">🎯</span> Phase 3: Plan</h3>
+            <p><strong>Goal:</strong> Resolve ALL unknowns before Engineering starts building</p>
+
+            <div class="key-question">
+                "Are we ready to 'let it rip'?"
+            </div>
+
+            <p><strong>The Bear Analogy:</strong> Under the table scene - Carmy and Sydney fixing the bolt together, ensuring foundation is solid before doors open.</p>
+
+            <h4>Activities Checklist:</h4>
+            <ul class="checklist">
+                <li>Finalize requirements (no more swirl)</li>
+                <li>Create release plan</li>
+                <li>Confirm every team says "heard!"</li>
+                <li>Shift from "I think we're ready" → "I know we're ready"</li>
+            </ul>
+
+            <div class="tip">
+                💡 This is your "mise en place" - everything in its place before service starts
+            </div>
+
+            <p><strong>Decision Gate:</strong> Is Engineering ready to build with confidence?</p>
+
+            <details class="video-links">
+                <summary>📺 Watch Videos</summary>
+
+                <div class="video-container">
+                    <h5>Overview of Activities</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase3-overview.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+
+                <div class="video-container">
+                    <h5>Gantt Illustration + Decisioning</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase3-gantt.mov" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+            </details>
+        </div>
+
+        <div class="phase-box phase4">
+            <h3><span class="emoji">🚀</span> Phase 4: Build & Validate</h3>
+            <p><strong>Goal:</strong> Feature that actually works for customers + rapid support</p>
+
+            <div class="key-question">
+                "Does the guest leave satisfied?"
+            </div>
+
+            <p><strong>The Bear Analogy:</strong> Friends & Family night - Execute under pressure, pivot when the fridge breaks, ensure validated success.</p>
+
+            <h4>Activities Checklist:</h4>
+            <ul class="checklist">
+                <li>Execute the build efficiently</li>
+                <li>Learn and adjust in real-time (like a tasting spoon)</li>
+                <li>Handle post-launch issues quickly ("re-fire the dish")</li>
+                <li>User validation (not just shipping code)</li>
+                <li>Relentless improvement</li>
+            </ul>
+
+            <p><strong>Success = Guest satisfaction, not just sending the plate out</strong></p>
+
+            <details class="video-links">
+                <summary>📺 Watch Videos</summary>
+
+                <div class="video-container">
+                    <h5>Overview of Activities</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase4-overview.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+
+                <div class="video-container">
+                    <h5>Gantt Illustration + Decisioning</h5>
+                    <video controls preload="metadata">
+                        <source src="videos/phase4-gantt.mp4" type="video/mp4">
+                        Your browser doesn't support video playback.
+                    </video>
+                </div>
+            </details>
+        </div>
+
+        <hr>
+
+        <h2>📝 Video Summaries</h2>
+        <div class="phase-box" style="background: #181825;">
+            <p><strong>Quick reference summaries of all training videos</strong> - Use these to review key points without rewatching.</p>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #89b4fa;">
+                <summary style="cursor: pointer; font-weight: 600; color: #89b4fa; padding: 5px;">Introduction to PDLC</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>4 Phases Overview:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Phase 1 (Discovery):</strong> Align on problem → Validated problem definition</li>
+                        <li><strong>Phase 2 (Define):</strong> Wireframes, requirements, designs → Clear actionable requirements</li>
+                        <li><strong>Phase 3 (Plan):</strong> Confirm readiness to build → Build-ready plan with completed artifacts</li>
+                        <li><strong>Phase 4 (Build & Validate):</strong> Execute efficiently → Successful feature launch validated by users</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Notable Changes from Current Process:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Earlier Engineering involvement:</strong> Mapping process prior to design</li>
+                        <li><strong>Focus on LoFi wireframes:</strong> Before design creation</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Key Takeaway:</h4>
+                    <p style="margin-top: 10px; font-style: italic; color: #89dceb;">Process is iterative: Move fast - but know when to slow down</p>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #fab387;">
+                <summary style="cursor: pointer; font-weight: 600; color: #fab387; padding: 5px;">Phase 1 Overview - Activities & Descriptions</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Activities:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>1.01 Context, Problem & Goal Definition:</strong> Problem Definition (Product owns)</li>
+                        <li><strong>1.02 ClinSol Insights:</strong> ClinSol Insights (ClinSol owns)</li>
+                        <li><strong>1.03 Foundational UXR:</strong> UXR Research Doc (UXR owns)</li>
+                        <li><strong>1.04 Competitor Reference:</strong> Competitive Analysis (Product owns)</li>
+                        <li><strong>1.05 Domain Modeling Draft:</strong> Domain Model Draft (Design owns)</li>
+                        <li><strong>1.06 Technical Feasibility & Analysis:</strong> Technical Feasibility Doc (Engineering owns)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #fab387;">
+                <summary style="cursor: pointer; font-weight: 600; color: #fab387; padding: 5px;">Phase 1 Gantt - Decision Making</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Key Question:</h4>
+                    <p style="font-style: italic; color: #f9e2af;">"Do we have confidence that we're solving the right problem for the right users?"</p>
+                    <h4 style="margin-top: 15px;">Exit Criteria:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Validated problem definition with key stakeholders</li>
+                        <li>Understand user needs and pain points from UXR</li>
+                        <li>Identified competitive landscape and differentiation</li>
+                        <li>Technical feasibility confirmed (no major blockers)</li>
+                        <li>Team alignment on problem space and potential solution directions</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #cba6f7;">
+                <summary style="cursor: pointer; font-weight: 600; color: #cba6f7; padding: 5px;">Phase 2 Overview - Activities & Descriptions</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Activities:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>2.01 Requirements Draft & Wireframe Creation:</strong> Wireframes Document (Design owns)</li>
+                        <li><strong>2.02 Design Creation + Requirements Refined:</strong> Requirements Document (Product owns)</li>
+                        <li><strong>2.02 Design Creation + Requirements Refined:</strong> Design Document (Design owns)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #cba6f7;">
+                <summary style="cursor: pointer; font-weight: 600; color: #cba6f7; padding: 5px;">Phase 2 Gantt - Decision Making</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Key Question:</h4>
+                    <p style="font-style: italic; color: #f9e2af;">"Do we collectively feel comfortable with the direction and level of detail in the draft requirements and initial designs?"</p>
+                    <h4 style="margin-top: 15px;">Important Principles:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>NOT a "check the box" exercise</li>
+                        <li>NOT based on artifact perfection</li>
+                        <li>Can always update prior phase artifacts with new information</li>
+                        <li>Requirements/designs will be completed in Phase 3</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Gantt Chart Insights:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Activities happen in parallel (drafting requirements + wireframes simultaneously)</li>
+                        <li>Phase 1 artifacts (process maps, ClinSol insights) were revisited and updated</li>
+                        <li>Requirements can inform wireframing and vice versa</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-style: italic; color: #89dceb;"><strong>Outcome:</strong> Actionable requirements and early designs that translate discovery insights into a firmer solution concept</p>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #74c7ec;">
+                <summary style="cursor: pointer; font-weight: 600; color: #74c7ec; padding: 5px;">Phase 3 Overview - Activities & Descriptions</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Sub-phase 3.01 - Detailed Understanding:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Complete Requirements (Design owns)</li>
+                        <li>Complete Designs (Design owns)</li>
+                        <li>Engineering Estimate "Timeline Range" (Engineering owns)</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Sub-phase 3.02 - Release Planning:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Release Plan Development (CM owns)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #74c7ec;">
+                <summary style="cursor: pointer; font-weight: 600; color: #74c7ec; padding: 5px;">Phase 3 Gantt - Decision Making</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Key Question:</h4>
+                    <p style="font-style: italic; color: #f9e2af;">"Do we understand the solution & risks well enough to begin in-depth development?"</p>
+                    <h4 style="margin-top: 15px;">Exit Criteria:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Artifacts sufficiently documented and reviewed by all Pod members</li>
+                        <li>Technical Lead comfortable with remaining open questions</li>
+                        <li>Team agrees: <strong>Cannot change requirements/designs after Phase 4 starts</strong></li>
+                        <li>Engineering decides acceptable change threshold (with Product + DM input)</li>
+                        <li>Team agrees to move forward (perfection not required)</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-style: italic; color: #89dceb;"><strong>Key Principle:</strong> We've learned enough to responsibly move forward (not "phase is done")</p>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #a6e3a1;">
+                <summary style="cursor: pointer; font-weight: 600; color: #a6e3a1; padding: 5px;">Phase 4 Overview - Activities & Descriptions</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Sub-phase 4.01 - Product Build & Demos:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Build the Product Features (Engineering owns)</li>
+                        <li>Demo Feature Sets throughout Build Phase (Engineering owns)</li>
+                        <li>Engineering Estimate: "Delivery Date" (Engineering owns)</li>
+                        <li>Release Plan Refinement (DM owns)</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Sub-phase 4.02 - Testing:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Complete all Required QA Testing (QA owns)</li>
+                        <li>Conduct PDAT Testing (DM owns)</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Other Sub-phases:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>4.03 Customer UAT</li>
+                        <li>4.04 Training</li>
+                        <li>4.05 Product Feature Launch</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Checklist Item:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Complete Go/No Go Decisioning:</strong> DM-led cross-functional review (product readiness, technical stability)</li>
+                    </ul>
+                </div>
+            </details>
+
+            <details style="margin: 15px 0; padding: 10px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #a6e3a1;">
+                <summary style="cursor: pointer; font-weight: 600; color: #a6e3a1; padding: 5px;">Phase 4 Gantt - Post-Launch Decision</summary>
+                <div style="padding: 15px 10px 10px 10px;">
+                    <h4>Gantt Timeline (Days 21-65):</h4>
+                    <p style="margin-top: 10px;">Shows Phase 3 and Phase 4 activities running in parallel:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li><strong>Phase 3 (Green):</strong> Days 21-30 (Requirements, Designs, Estimates, Release Plan)</li>
+                        <li><strong>Phase 4 (Purple):</strong> Days 30-65+ (Build, Demos, QA, PDAT, UAT, Training, Launch, Hypercare)</li>
+                    </ul>
+                    <h4 style="margin-top: 15px;">Key Question (Post-Launch):</h4>
+                    <p style="font-style: italic; color: #f9e2af;">"Do we feel comfortable with the number & severity of issues reported during Post-Launch Hypercare, so we can end Hypercare by a specific date?"</p>
+                    <h4 style="margin-top: 15px;">Exit Criteria:</h4>
+                    <ul style="margin-left: 20px; margin-top: 10px;">
+                        <li>Review Hypercare issues and decide if can close Release</li>
+                        <li>Account for timeline to implement fixes</li>
+                        <li>Transition to standard "Support" model</li>
+                    </ul>
+                    <p style="margin-top: 10px; font-style: italic; color: #89dceb;"><strong>Outcome:</strong> Successful feature launch validated by users, supported by stable performance and rapid post-launch issue resolution</p>
+                </div>
+            </details>
+
+            <p style="margin-top: 20px; font-size: 14px; color: #6c7086;">
+                💡 <strong>Tip:</strong> Full detailed summaries available in <code style="background: #313244; padding: 2px 6px; border-radius: 3px;">pdlc-video-summaries.md</code>
+            </p>
+        </div>
+
+        <hr>
+
+        <h2>📄 Video Transcripts</h2>
+        <div class="phase-box" style="background: #181825;">
+            <p><strong>Full spoken transcripts for all training videos</strong> - For text-based learning, searching specific content, or accessibility needs.</p>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 12px; margin-top: 20px;">
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/intro-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #89b4fa; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #89b4fa; margin-bottom: 4px;">📝 Introduction</div>
+                    <div style="font-size: 13px; color: #6c7086;">76 lines • 5.3K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase1-overview-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #fab387; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #fab387; margin-bottom: 4px;">📝 Phase 1 Overview</div>
+                    <div style="font-size: 13px; color: #6c7086;">46 lines • 6.2K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase1-gantt-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #fab387; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #fab387; margin-bottom: 4px;">📝 Phase 1 Gantt</div>
+                    <div style="font-size: 13px; color: #6c7086;">59 lines • 4.2K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase2-overview-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #cba6f7; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #cba6f7; margin-bottom: 4px;">📝 Phase 2 Overview</div>
+                    <div style="font-size: 13px; color: #6c7086;">28 lines • 3.7K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase2-gantt-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #cba6f7; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #cba6f7; margin-bottom: 4px;">📝 Phase 2 Gantt</div>
+                    <div style="font-size: 13px; color: #6c7086;">49 lines • 3.3K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase3-overview-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #74c7ec; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #74c7ec; margin-bottom: 4px;">📝 Phase 3 Overview</div>
+                    <div style="font-size: 13px; color: #6c7086;">52 lines • 3.6K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase3-gantt-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #74c7ec; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #74c7ec; margin-bottom: 4px;">📝 Phase 3 Gantt</div>
+                    <div style="font-size: 13px; color: #6c7086;">49 lines • 3.3K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase4-overview-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #a6e3a1; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #a6e3a1; margin-bottom: 4px;">📝 Phase 4 Overview</div>
+                    <div style="font-size: 13px; color: #6c7086;">51 lines • 3.3K</div>
+                </a>
+
+                <a href="https://github.com/kayla-at-chorus/pdlc-training-assets/blob/main/transcripts/phase4-gantt-transcript.txt" style="display: block; padding: 12px; background: #1e1e2e; border-radius: 4px; border-left: 3px solid #a6e3a1; text-decoration: none; color: #ECEFF4; transition: all 0.2s ease;">
+                    <div style="font-weight: 600; color: #a6e3a1; margin-bottom: 4px;">📝 Phase 4 Gantt</div>
+                    <div style="font-size: 13px; color: #6c7086;">40 lines • 2.9K</div>
+                </a>
+            </div>
+
+            <p style="margin-top: 20px; font-size: 14px; color: #6c7086;">
+                💡 <strong>Note:</strong> Transcripts are searchable text files - use Cmd+F to find specific topics or terms
+            </p>
+        </div>
+
+        <hr>
+
+        <h2>🎓 Training Completion Checklist</h2>
+        <ul class="checklist">
+            <li>Watch Introduction video</li>
+            <li>Complete Phase 1: Discovery section</li>
+            <li>Complete Phase 2: Define section</li>
+            <li>Complete Phase 3: Plan section</li>
+            <li>Complete Phase 4: Build & Validate section</li>
+            <li>Watch Conclusion video</li>
+            <li>Submit Feedback Survey</li>
+        </ul>
+
+        <div class="tip">
+            💡 <strong>Reminder:</strong> Functional leads will host team-specific deep dives March 9-13
+        </div>
+
+        <hr>
+
+        <h2>🌟 Key Takeaways</h2>
+        <div class="phase-box">
+            <ul class="checklist">
+                <li><strong>No more reinventing the wheel</strong> - Shared map for everyone</li>
+                <li><strong>Discovery before solutions</strong> - Solve the right problem</li>
+                <li><strong>Cross-functional alignment</strong> - No late-stage surprises</li>
+                <li><strong>World-class service</strong> - Details matter for customers</li>
+                <li><strong>Learning-driven</strong> - Iterate and improve together</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <h2>🎬 "The Bear" Reference Clips</h2>
+        <div class="video-links" style="background: #181825; border-left: 4px solid #fab387; padding: 20px;">
+            <p style="margin-top: 0;">Throughout the training, clips from "The Bear" illustrate each phase:</p>
+            <ul>
+                <li><a href="https://www.youtube.com/watch?v=Gk-NxwrAApc" target="_blank"><strong>Discovery:</strong> Implementing the Brigade System</a></li>
+                <li><a href="https://www.youtube.com/watch?v=1ABxxKbqXhc" target="_blank"><strong>Define:</strong> The Forks Episode (Every Detail Matters)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=8PxqQeTIBXA" target="_blank"><strong>Plan:</strong> Under the Table Scene (Alignment)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Uc_1MYeN1gk" target="_blank"><strong>Build & Validate:</strong> Friends & Family Night (Launch)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=7jABJ-Jzykg" target="_blank"><strong>Hospitality:</strong> Service Excellence (Cousin Richie)</a></li>
+            </ul>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px; font-size: 24px;">
+            🍴 Let's let it rip! 🍴
+        </div>
+    </div>
+</body>
+</html>
