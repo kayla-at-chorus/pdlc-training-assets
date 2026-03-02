@@ -1,19 +1,18 @@
-# PDLC Training Assets
+# PDLC Training
 
-Training materials for the Chorus Product Development Lifecycle (PDLC), effective March 16, 2026.
+ADHD-friendly training guide for the Chorus Product Development Lifecycle (PDLC). Dark theme, collapsible video sections, embedded transcripts.
 
-## Quick start
-
-Open `pdlc-training-adhd-friendly.html` in a browser. Videos and transcripts are self-contained in this repo.
+**[View the training site](https://kayla-at-chorus.github.io/pdlc-training-assets/)**
 
 **Training deadline:** March 6, 2026
+**Go-live:** March 16, 2026
 
-## What's here
+## What's in here
 
-- `pdlc-training-adhd-friendly.html` — ADHD-friendly training guide with embedded videos, collapsible sections, and dark theme
-- `videos/` — Training videos for all 4 phases (overview + gantt/decisioning per phase, plus intro)
+- `index.html` — The training page (served via GitHub Pages)
+- `videos/` — 9 training videos covering all 4 phases (intro, overview + gantt per phase)
 - `transcripts/` — Full spoken transcripts for each video
 
 ## Original source
 
-Full training page on Confluence: [PDLC Training](https://chorusapp.atlassian.net/wiki/spaces/DM/pages/3445981209/PDLC+Training)
+[PDLC Training on Confluence](https://chorusapp.atlassian.net/wiki/spaces/DM/pages/3445981209/PDLC+Training)
